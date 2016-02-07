@@ -1,0 +1,44 @@
+header {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.site-header {
+
+}
+
+.logo {
+  margin-bottom: 1rem;
+}
+
+.logo img {
+  max-width: 18.75rem;
+}
+
+form {
+  background-color: #000000;
+  border-bottom: 1px solid #dbdbdb;
+  width:100%;
+  margin:0 auto;
+}
+
+input {
+  color: #c2c2c2;
+  background-color: #000000;
+  border: none;
+  font-family: Open Sans;
+  font-size: 1rem;
+}
+
+button {
+  color: #ffffff;
+  background-color: #000000;
+  border: none;
+}
+
+button:hover {
+  color: #e2231a;
+}

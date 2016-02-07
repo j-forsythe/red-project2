@@ -91,3 +91,83 @@ body {
 
 html {
   background-color: #000000; }
+
+/*layout*/
+.container {
+  height: 80vh;
+  margin: 1 auto; }
+
+header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.logo {
+  margin-bottom: 1rem; }
+
+.logo img {
+  max-width: 18.75rem; }
+
+form {
+  background-color: #000000;
+  border-bottom: 1px solid #dbdbdb;
+  width: 100%;
+  margin: 0 auto; }
+
+input {
+  color: #c2c2c2;
+  background-color: #000000;
+  border: none;
+  font-family: Open Sans;
+  font-size: 1rem; }
+
+button {
+  color: #ffffff;
+  background-color: #000000;
+  border: none; }
+
+button:hover {
+  color: #e2231a; }
+
+.grid li {
+  position: relative; }
+
+.image-info {
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5rem;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0; }
+  .image-info .profile-pic {
+    -webkit-flex: 1 0 auto;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto; }
+    .image-info .profile-pic img {
+      border-radius: 50%;
+      max-width: 3.1rem; }
+  .image-info .profile-info {
+    text-align: right;
+    -webkit-flex: 1 0 auto;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center; }
+    .image-info .profile-info p {
+      font-weight: bold; }
+
+/*footer*/
+.site-footer {
+  color: #c2c2c2; }

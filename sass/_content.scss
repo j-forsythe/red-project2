@@ -1,0 +1,30 @@
+.grid {
+  li {
+    position: relative;
+  }
+}
+
+.image-info {
+  width: 100%;
+  display: flex;
+  padding: 0.5rem;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+    .profile-pic {
+      flex: 1 0 auto;
+      img {
+        border-radius: 50%;
+        max-width: 3.1rem;
+        }
+    }
+    .profile-info {
+      text-align: right;
+      flex: 1 0 auto;
+      align-self: center;
+      p {
+        font-weight: bold;
+      }
+    }
+
+}

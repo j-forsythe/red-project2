@@ -1,0 +1,17 @@
+  @mixin tablet {
+    @media all and (min-width:$tablet-width) {
+      @content;
+    }
+  }
+
+@mixin desktop {
+  @media all and (min-width:$desktop-width) {
+    @content;
+  }
+}
+
+// photogrid
+
+@mixin profile-info {
+
+}
