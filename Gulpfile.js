@@ -23,6 +23,7 @@ gulp.task('uglify', function(){
 
 gulp.task('sass', function() {
    gulp.src('./sass/style.scss')
+      .pipe(plumber())
       .pipe(sass())
       .pipe(autoprefixer({
          browsers: ['last 2 versions']

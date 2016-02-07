@@ -1,6 +1,21 @@
+.loader {
+  display: none;
+  width: 2rem;
+  margin: auto;
+}
+
 .grid {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
   li {
     position: relative;
+    @include tablet {
+      flex: 1 0 33%;
+    }
+    @include desktop {
+      flex: 1 0 25%;
+    }
   }
 }
 

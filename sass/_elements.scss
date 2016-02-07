@@ -1,14 +1,5 @@
 /*elements*/
 
-img {
-   max-width: 100%; /* adhere to container width */
-   height: auto; /* make sure height scales correctly */
-	 border: 0;
-}
-
-
-
-
 * {
 	box-sizing: border-box;
 	outline: none;
@@ -18,15 +9,20 @@ body {
   color: #ffffff;
   font-size: 16px;
   font-family: Open Sans;
-  /*text-align: center;*/
 }
 
 html {
   background-color: #000000;
 }
 
+img {
+   max-width: 100%; /* adhere to container width */
+   height: auto; /* make sure height scales correctly */
+	 border: 0;
+}
+
 /*layout*/
 .container {
-  height: 80vh;
-  margin: 1 auto;
+  margin: 0 auto;
+	padding: 0 1rem;
 }

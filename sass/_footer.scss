@@ -5,5 +5,9 @@ footer {
 
 .site-footer {
   color: #c2c2c2;
-
+  text-align: center;
+  padding: 1rem;
+  @include desktop {
+    text-align: right;
+  }
 }
