@@ -1,8 +1,14 @@
-  @mixin tablet {
-    @media all and (min-width:$tablet-width) {
-      @content;
-    }
+@mixin note {
+  @media all and (min-width:480px) {
+    @content;
   }
+}
+
+@mixin tablet {
+  @media all and (min-width:$tablet-width) {
+    @content;
+  }
+}
 
 @mixin desktop {
   @media all and (min-width:$desktop-width) {

@@ -1,5 +1,5 @@
 header {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,7 +47,7 @@ form {
       font-family: Open Sans;
       flex: 2 0 80%;
     }
-    button {
+    .search {
       border: none;
       flex:1 0 auto;
       @include form(#ffffff);

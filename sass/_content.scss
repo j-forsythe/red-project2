@@ -11,6 +11,9 @@
   flex-wrap: wrap;
   li {
     position: relative;
+    @include note {
+      flex: 1 0 50%;
+    }
     @include tablet {
       flex: 1 0 33%;
     }
@@ -20,27 +23,39 @@
   }
 }
 
+li {
+  overflow: hidden;
+  &:hover .image-info{
+    // bottom: 0;
+    transform: translate3d(0px, -67px, 0px);
+  }
+}
+
 .image-info {
   width: 100%;
   display: flex;
   padding: 0.5rem;
   background: rgba(0, 0, 0, 0.5);
   position: absolute;
-  bottom: 0;
-    .profile-pic {
-      flex: 1 0 auto;
-      img {
-        border-radius: 50%;
-        max-width: 3.1rem;
-        }
-    }
-    .profile-info {
-      text-align: right;
-      flex: 1 0 auto;
-      align-self: center;
-      p {
-        font-weight: bold;
+  transform: translate3d(0px, 0px, 0px);
+  transition: transform 0.5s ease-in-out;
+  .profile-pic {
+    flex: 1 0 auto;
+    img {
+      border-radius: 50%;
+      max-width: 3.1rem;
       }
+  }
+  .profile-info {
+    text-align: right;
+    flex: 1 0 auto;
+    align-self: center;
+    p {
+      font-weight: bold;
     }
-
+  }
 }
+
+// .load-more {
+//
+// }

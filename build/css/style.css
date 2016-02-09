@@ -97,7 +97,7 @@ img {
   padding: 0 1rem; }
 
 header {
-  height: 100vh;
+  height: 90vh;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -169,7 +169,7 @@ form {
       -webkit-flex: 2 0 80%;
           -ms-flex: 2 0 80%;
               flex: 2 0 80%; }
-    form .hashtag-search button {
+    form .hashtag-search .search {
       border: none;
       -webkit-flex: 1 0 auto;
           -ms-flex: 1 0 auto;
@@ -177,7 +177,7 @@ form {
       color: #ffffff;
       background-color: #000000;
       font-size: 1rem; }
-      form .hashtag-search button:hover {
+      form .hashtag-search .search:hover {
         color: #e2231a; }
 
 .loader {
@@ -196,6 +196,11 @@ form {
           flex-wrap: wrap; }
   .grid li {
     position: relative; }
+    @media all and (min-width: 480px) {
+      .grid li {
+        -webkit-flex: 1 0 50%;
+            -ms-flex: 1 0 50%;
+                flex: 1 0 50%; } }
     @media all and (min-width: 600px) {
       .grid li {
         -webkit-flex: 1 0 33%;
@@ -207,6 +212,12 @@ form {
             -ms-flex: 1 0 25%;
                 flex: 1 0 25%; } }
 
+li {
+  overflow: hidden; }
+  li:hover .image-info {
+    -webkit-transform: translate3d(0px, -67px, 0px);
+            transform: translate3d(0px, -67px, 0px); }
+
 .image-info {
   width: 100%;
   display: -webkit-flex;
@@ -215,7 +226,11 @@ form {
   padding: 0.5rem;
   background: rgba(0, 0, 0, 0.5);
   position: absolute;
-  bottom: 0; }
+  -webkit-transform: translate3d(0px, 0px, 0px);
+          transform: translate3d(0px, 0px, 0px);
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out; }
   .image-info .profile-pic {
     -webkit-flex: 1 0 auto;
         -ms-flex: 1 0 auto;
@@ -235,6 +250,9 @@ form {
       font-weight: bold; }
 
 /*footer*/
+footer {
+  height: 10vh; }
+
 .site-footer {
   color: #c2c2c2;
   text-align: center;

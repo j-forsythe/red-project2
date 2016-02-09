@@ -7,7 +7,7 @@
        <meta name="author" content="Jillian Forsythe">
 
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-      <link rel="stylesheet" href="/build/css/style.min.css"/>
+      <link rel="stylesheet" href="./build/css/style.min.css"/>
     </head>
 
     <body>
@@ -22,7 +22,7 @@
             <div class="hashtag-search">
               <i class="fa fa-hashtag"></i>
               <input type="text" name="hashtag-search"  value="" placeholder="Search for a hashtag" id="search"/>
-              <button type="submit" name="" id="button"/>
+              <button type="submit" name="" class="search">
                 <i class="fa fa-search">
                 </i>
               </button>
@@ -34,9 +34,12 @@
 <!-- section -->
       <section>
         <div>
-          <img src="/images/ajax-loader.gif" alt="loading" class="loader"/>
+          <img src="./images/ajax-loader.gif" alt="loading" class="loader"/>
           <ul class="grid">
           </ul>
+          <!-- <button type='submit' name='load-more' class="load-more" placeholder='Load More'>
+          Load More
+          </button> -->
         </div>
       </section>
 
@@ -47,5 +50,5 @@
       </footer>
 
       <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-      <script src="/build/main.min.js"></script>
+      <script src="./build/main.min.js"></script>
     </body>
