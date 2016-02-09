@@ -1,4 +1,5 @@
 header {
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,10 +9,9 @@ header {
 }
 
 .site-header {
-  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   @include tablet {
     flex-direction: row;
   }
@@ -24,20 +24,28 @@ header {
   }
   @include tablet {
     margin: 0 1rem 0 0;
+    flex:1 0 50%;
   }
 }
 
 form {
   border-bottom: 1px solid #dbdbdb;
+  width:100%;
+  @include tablet {
+    flex:1 0 50%;
+  }
   .hashtag-search {
     @include form(#ffffff);
-    width:100%;
     margin:0 auto;
-    align-self:auto;
+    display: flex;
+    .fa-hashtag {
+      flex: 1 0 auto;
+    }
     input {
       border: none;
       @include form(#c2c2c2);
       font-family: Open Sans;
+      flex: 2 0 80%;
     }
     button {
       border: none;

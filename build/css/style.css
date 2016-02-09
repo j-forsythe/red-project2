@@ -97,6 +97,7 @@ img {
   padding: 0 1rem; }
 
 header {
+  height: 100vh;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -113,16 +114,15 @@ header {
               justify-content: flex-start; } }
 
 .site-header {
-  height: 100vh;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
   @media all and (min-width: 600px) {
     .site-header {
       -webkit-flex-direction: row;
@@ -135,25 +135,40 @@ header {
     max-width: 18.75rem; }
   @media all and (min-width: 600px) {
     .logo {
-      margin: 0 1rem 0 0; } }
+      margin: 0 1rem 0 0;
+      -webkit-flex: 1 0 50%;
+          -ms-flex: 1 0 50%;
+              flex: 1 0 50%; } }
 
 form {
-  border-bottom: 1px solid #dbdbdb; }
+  border-bottom: 1px solid #dbdbdb;
+  width: 100%; }
+  @media all and (min-width: 600px) {
+    form {
+      -webkit-flex: 1 0 50%;
+          -ms-flex: 1 0 50%;
+              flex: 1 0 50%; } }
   form .hashtag-search {
     color: #ffffff;
     background-color: #000000;
     font-size: 1rem;
-    width: 100%;
     margin: 0 auto;
-    -webkit-align-self: auto;
-        -ms-flex-item-align: auto;
-            align-self: auto; }
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    form .hashtag-search .fa-hashtag {
+      -webkit-flex: 1 0 auto;
+          -ms-flex: 1 0 auto;
+              flex: 1 0 auto; }
     form .hashtag-search input {
       border: none;
       color: #c2c2c2;
       background-color: #000000;
       font-size: 1rem;
-      font-family: Open Sans; }
+      font-family: Open Sans;
+      -webkit-flex: 2 0 80%;
+          -ms-flex: 2 0 80%;
+              flex: 2 0 80%; }
     form .hashtag-search button {
       border: none;
       -webkit-flex: 1 0 auto;
@@ -166,11 +181,12 @@ form {
         color: #e2231a; }
 
 .loader {
-  display: none;
-  width: 2rem;
+  display: block;
+  width: 3rem;
   margin: auto; }
 
 .grid {
+  list-style: none;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -225,4 +241,4 @@ form {
   padding: 1rem; }
   @media all and (min-width: 1000px) {
     .site-footer {
-      text-align: right; } }
+      text-align: left; } }

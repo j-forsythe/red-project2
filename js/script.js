@@ -2,6 +2,8 @@ $(function () {
 
   //  search function
 
+  $('.loader').hide();
+
   $(button).on('click', function (event) {
 
     event.preventDefault();
@@ -10,14 +12,16 @@ $(function () {
     var list = '';
     var $grid = $('.grid');
 
-    $('.site-header').css({
+    $('header').css({
       'height': 'auto',
       'padding': '1rem',
     });
 
-    $('.loader').ajaxStart (function(){
-      $(this).css('display', 'block');
-    });
+    $(document).bind("ajaxSend", function(){
+     $(".loader").show();
+   }).bind("ajaxComplete", function(){
+     $(".loader").hide();
+   });
 
     $.ajax({
       dataType: 'jsonp',
@@ -46,22 +50,24 @@ $(function () {
         list += '</li>';
       });
 
-      $grid.append(list);
-      $list.empty();
+      $grid.empty().append(list);
+      $list = '';
     })
 
-    .fail(function (error) {
-      return "Sorry! Please enter a search term";
+    .fail(function () {
+      $grid.append("<li>Please enter a search term</li>").css({
+        'text-align': 'center',
+        'font-style': 'italic',
+        'font-family': 'Open Sans'
+        });
+        $list= '';
     });
 
-    $('.loader').ajaxStop(function(){
-      $(this).css('display', 'none');
-    });
 
     //  end of search function
 
   });
 
-  //  end of document ready
+    //  end of document ready
 
 });

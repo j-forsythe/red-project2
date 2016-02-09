@@ -1,10 +1,11 @@
 .loader {
-  display: none;
-  width: 2rem;
+  display: block;
+  width: 3rem;
   margin: auto;
 }
 
 .grid {
+  list-style: none;
   display: flex;
   width: 100%;
   flex-wrap: wrap;

@@ -8,6 +8,6 @@ footer {
   text-align: center;
   padding: 1rem;
   @include desktop {
-    text-align: right;
+    text-align: left;
   }
 }
