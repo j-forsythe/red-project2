@@ -51,7 +51,7 @@ $(function () {
       });
 
       $grid.empty().append(list);
-      $list = '';
+      list = '';
     })
 
     .fail(function () {
@@ -60,7 +60,7 @@ $(function () {
         'font-style': 'italic',
         'font-family': 'Open Sans'
         });
-        $list= '';
+        list= '';
     });
 
 
