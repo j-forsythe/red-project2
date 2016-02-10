@@ -64,11 +64,9 @@ $(function () {
         'font-style': 'italic',
         'font-family': 'Open Sans',
         });
-<<<<<<< HEAD
+
         list= '';
-=======
-        list = '';
->>>>>>> master
+
     });
 
     //  end of search function
