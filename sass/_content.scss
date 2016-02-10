@@ -26,7 +26,6 @@
 li {
   overflow: hidden;
   &:hover .image-info{
-    // bottom: 0;
     transform: translate3d(0px, -67px, 0px);
   }
 }
@@ -56,6 +55,17 @@ li {
   }
 }
 
-// .load-more {
-//
-// }
+.load-more {
+  background-color: #e2231a;
+  color: #ffffff;
+  border: none;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  display: block;
+  margin: 2rem auto;
+  text-transform: uppercase;
+  font-size: 1rem;
+  &:hover {
+    background: rgba(226, 35, 26, 0.5);
+  }
+}
