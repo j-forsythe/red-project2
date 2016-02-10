@@ -64,7 +64,9 @@ $(function () {
         'font-style': 'italic',
         'font-family': 'Open Sans',
         });
-        list = '';
+
+        list= '';
+
     });
 
     //  end of search function
