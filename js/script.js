@@ -66,7 +66,7 @@ $(function () {
         });
 
         list= '';
-
+        
     });
 
     //  end of search function
