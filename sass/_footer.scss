@@ -11,4 +11,7 @@ footer {
   @include desktop {
     text-align: left;
   }
+  span {
+    text-transform: uppercase;
+  }
 }
