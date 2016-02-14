@@ -20,42 +20,49 @@ header {
   }
 }
 
-.logo {
-  margin-bottom: 1rem;
-  img {
-  max-width: 18.75rem;
-  }
+.logo img {
+  max-width: 300px;
   @include tablet {
-    margin: 0 1rem 0 0;
-    flex:1 0 50%;
+    padding-right: 1rem;
   }
+  @include desktop {
+  max-width: 400px;
+}
 }
 
 form {
   border-bottom: 1px solid #dbdbdb;
-  width:100%;
-  @include tablet {
-    flex:1 0 50%;
-  }
+  width:300px;
   .hashtag-search {
     @include form(#ffffff);
-    margin:0 auto;
-    display: flex;
+    margin-top: .8rem;
+    @include desktop {
+    margin-top: 1.2rem;
+      }
     .fa-hashtag {
-      flex: 1 0 auto;
+      border: none;
+      font-size: 1.25rem;
+      font-weight: bold;
+      padding-right: .4rem;
     }
     input {
       border: none;
       @include form(#c2c2c2);
       font-family: Open Sans;
-      flex: 2 0 80%;
+      line-height: 1.75rem;
     }
     .search {
       border: none;
-      flex:1 0 auto;
+      padding-left: 4.3rem;
+      outline: none;
       @include form(#ffffff);
+      .fa-search{
+      font-size: 1.25rem;
+      font-weight: bold;
+      }
       &:hover {
         color: #e2231a;
+        cursor: pointer;
       }
     }
   }

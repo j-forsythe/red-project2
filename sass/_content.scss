@@ -1,7 +1,8 @@
 .loader {
   display: block;
-  width: 3rem;
+  width: 100px;
   margin: auto;
+  padding: 4rem;
 }
 
 .grid {
@@ -50,8 +51,14 @@ li {
     flex: 1 0 auto;
     align-self: center;
     p {
-      font-weight: bold;
+      font-weight: 700;
+      padding-bottom: .2rem;
     }
+    .fa {
+      padding: 0 .2rem;
+      font-size: 1rem;
+
+}
   }
 }
 
@@ -67,5 +74,6 @@ li {
   font-size: 1rem;
   &:hover {
     background: rgba(226, 35, 26, 0.5);
+    cursor: pointer;
   }
 }
