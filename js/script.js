@@ -59,14 +59,19 @@ $(function () {
     })
 
     .fail(function () {
-      $grid.append("<li>Please enter a search term</li>").css({
-        'text-align': 'center',
+      $grid.append("<li>Please enter a valid search term.</li>").css({
+        'display': 'flex',
+        'justify-content': 'center',
+        'align-items': 'center',
         'font-style': 'italic',
         'font-family': 'Open Sans',
-        });
+        'color': 'white',
+        'margin': '10rem, auto',
+        'font-size': '2rem',
+      });
 
         list= '';
-        
+
     });
 
     //  end of search function
