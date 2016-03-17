@@ -77,3 +77,14 @@ li {
     cursor: pointer;
   }
 }
+
+.error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    font-family: Open Sans;
+    color: white;
+    margin: 10rem auto;
+    font-size: 2rem;
+}

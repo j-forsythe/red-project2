@@ -16,14 +16,14 @@ $(function () {
     var hashtag = $('#search').val();
 
     $(document).bind('ajaxSend', function() {
-     $('.loader').show();
-   }).bind('ajaxComplete', function() {
-     $('.loader').slideUp('slow');
-     $('.load-more').show();
-     $('header').css({
-       height: 'auto',
-       padding: '1.5rem',
-     });
+      $('.loader').show();
+    }).bind('ajaxComplete', function() {
+      $('.loader').slideUp('slow');
+      $('.load-more').show();
+      $('header').css({
+        height: 'auto',
+        padding: '1.5rem',
+      });
     });
 
     $.ajax({
@@ -34,7 +34,7 @@ $(function () {
 
     .done(function (instaData) {
       pagination = instaData.pagination.next_url;
-      console.log(instaData);
+
       $.each(instaData.data, function (i, el) {
         list += '<li>';
         list +=   '<a href="' + el.link + '">';
@@ -59,18 +59,8 @@ $(function () {
     })
 
     .fail(function () {
-      $grid.append("<li>Please enter a valid search term.</li>").css({
-        'display': 'flex',
-        'justify-content': 'center',
-        'align-items': 'center',
-        'font-style': 'italic',
-        'font-family': 'Open Sans',
-        'color': 'white',
-        'margin': '10rem, auto',
-        'font-size': '2rem',
-      });
-
-        list= '';
+      $grid.append("<li class='error'>Please enter a valid search term.</li>");
+      list= '';
 
     });
 
@@ -82,10 +72,10 @@ $(function () {
   $('.load-more').on('click', function() {
 
     $(document).bind('ajaxSend', function() {
-     $('.loader').show();
-      }).bind('ajaxComplete', function() {
-     $('.loader').hide();
-      });
+      $('.loader').show();
+    }).bind('ajaxComplete', function() {
+      $('.loader').hide();
+    });
 
     $.ajax({
       dataType: 'jsonp',
@@ -122,6 +112,6 @@ $(function () {
     // end of load more
   });
 
-//  end of document ready
+  //  end of document ready
 
 });
