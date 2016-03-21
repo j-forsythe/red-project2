@@ -106,7 +106,8 @@ header {
           justify-content: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  transition: height 2s; }
   @media all and (min-width: 1000px) {
     header {
       -webkit-justify-content: flex-start;
@@ -264,6 +265,22 @@ li {
   .load-more:hover {
     background: rgba(226, 35, 26, 0.5);
     cursor: pointer; }
+
+.error {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-style: italic;
+  font-family: Open Sans;
+  color: white;
+  margin: 10rem auto;
+  font-size: 2rem; }
 
 /*footer*/
 footer {
