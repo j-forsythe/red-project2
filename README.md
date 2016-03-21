@@ -8,12 +8,12 @@ This webpage pulls Instagram hashtags through API to display a list of recently 
 
 ##Tools and Methods
 
--HTML/CSS
--Flexbox
--jQuery
--Ajax request from Instagram API
--Responsive design
--Gulp, SASS, Autoprefixer, Browser-Sync
+- HTML/CSS
+- Flexbox
+- jQuery
+- Ajax request from Instagram API
+- Responsive design
+- Gulp, SASS, Autoprefixer, Browser-Sync
 
 ##Experience
 
